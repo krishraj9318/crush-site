@@ -1,1 +1,36 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, #1a1a40, #191970);
+  color: white;
+  font-family: Arial;
+  overflow: hidden;
+}
 
+.box {
+  text-align: center;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff4d6d;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes float {
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
